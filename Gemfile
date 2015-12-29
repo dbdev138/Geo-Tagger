@@ -20,7 +20,10 @@ source 'https://rubygems.org'
 # gem 'capistrano-rails', group: :development
 
 
-ruby 'ruby 2.2.1'
+ruby '2.2.1'
+gem 'google_drive'
+gem 'geocoder'
+gem 'geokit'
 gem 'rails', '4.2.4'
 gem 'sass-rails', '~> 5.0'
 gem 'bootstrap-sass', '~> 3.3.5'

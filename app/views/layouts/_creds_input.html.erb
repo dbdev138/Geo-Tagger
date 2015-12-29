@@ -1,38 +1,29 @@
-<section class="drop_100">
+<form class="form-horizontal" action="/credentials" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="bTWCJxrHg6nVMosajSAnI419HAM1a9CLoT7+buo4XU3oo22nwJ7K7QL+7CwxGCutzrI8L9QQFqXde8y+M2+kaQ==" />
 
-    <div class="col-md-3">
-    	<h2>Please enter your Google user credentials here <span class="glyphicon glyphicon-circle-arrow-right"></span></h2>
+      <div class="form-group">
+        <label for="credential_client_id" class="col-sm-2 control-label">Client ID</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" name="credential[client_id]" id="credential_client_id" placeholder="Please enter your Google Client ID">
+        </div>
+      </div>
 
-    </div>
-    <div class="col-md-9">
-	    <!-- Forms -->
-	    <form class="form-horizontal">
-		  <div class="form-group">
-		    <label for="client_id" class="col-sm-2 control-label">Client ID</label>
-		    <div class="col-sm-10">
-		      <input type="text" class="form-control" id="client_id" placeholder="Please enter your Google Client ID">
-		    </div>
-		  </div>
+      <div class="form-group">
+        <label for="credential_client_secret" class="col-sm-2 control-label">Client Secret</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" name="credential[client_secret]" id="credential_client_secret" placeholder="Please enter your Google Client Secret">
+        </div>
+      </div>
 
-		  <div class="form-group">
-		    <label for="client_secret" class="col-sm-2 control-label">Client Secret</label>
-		    <div class="col-sm-10">
-		      <input type="text" class="form-control" id="client_secret" placeholder="Please enter your Google Client Secret">
-		    </div>
-		  </div>
-
-		   <div class="form-group">
-		    <label for="spreadsheet_key" class="col-sm-2 control-label">Spreadsheet Key</label>
-		    <div class="col-sm-10">
-		      <input type="text" class="form-control" id="spreadsheet_key" placeholder="Please enter the key of the Google sheet you wish to use">
-		    </div>
-		  </div>
-		 
-		  <div class="form-group">
-		    <div class="col-sm-offset-2 col-sm-10">
-		      <button type="submit" class="btn btn-default">Submit Credentials</button>
-		    </div>
-		  </div>
-		</form>
-		</div>
-</section>
+       <div class="form-group">
+        <label for="credential_ws_key" class="col-sm-2 control-label">Spreadsheet Key</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" name="credential[ws_key]" id="credential_ws_key" placeholder="Please enter the key of the Google sheet you wish to use">
+        </div>
+      </div>
+     
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <input type="submit" name="commit" class="btn btn-default" value="Submit Credentials" />
+        </div>
+      </div>
+</form>
