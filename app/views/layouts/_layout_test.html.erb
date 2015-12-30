@@ -1,0 +1,19 @@
+<%= "Count to 10" %>
+<br />
+<% 11.times do |i| %>
+	<%= i %>
+<% end %>
+<br />
+
+<%= "Message from contoller: #{@controller_message}"%>
+<br />
+<%= get_season() %>
+<br />
+<%= get_message() %>
+<br />
+<%= button_to 'Get Season', :onclick => 'application/get_season()' %>
+<br />
+<br />
+<br />
+<br />
+ 

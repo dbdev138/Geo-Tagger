@@ -1,0 +1,31 @@
+<div class="panel panel-primary">
+      <% addresses = [] %>
+      <% @orgional_sheet_content.each do |row| %>
+            <% addresses.push(row[1]) %>
+      <% end %> 
+      
+      <% process_controller_B(addresses) %>
+  
+  
+      <div class="panel-heading">
+        <h3 class="panel-title centre"><centre>Modified Data Snapshot</centre></h3>
+      </div>
+      <div class="panel-body">
+        <table class="table table-bordered table-responsive table-striped">
+          <tr>
+            <th>Business Name</th>
+            <th>Address</th>
+            <th>Latitude</th>
+            <th>Longitude</th>
+          </tr>
+           <% @new_sheet_content.each do |row| %>
+            <tr>
+              <td><%= row[0] %></td>
+              <td><%= row[1] %></td>
+              <td><%= row[2] %></td>
+              <td><%= row[3] %></td>
+            </tr>
+          <% end %>
+        </table>
+      </div>
+</div>
