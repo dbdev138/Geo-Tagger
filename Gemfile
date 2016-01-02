@@ -20,7 +20,7 @@ source 'https://rubygems.org'
 # gem 'capistrano-rails', group: :development
 
 
-ruby '2.2.3'
+ruby '2.2.1'
 gem 'google_drive'
 gem 'geocoder'
 gem 'geokit'
